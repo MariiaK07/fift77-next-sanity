@@ -1,14 +1,15 @@
 import { getAbout } from '@/sanity/sanity-utils';
 
-const Home = async () => {
+const About = async () => {
   const about = await getAbout();
 
   return (
-    <div>
+    <section>
       {about[0].title}
+      <br />
       {about[0].description}
-    </div>
+    </section>
   );
 };
 
-export default Home;
+export default About;

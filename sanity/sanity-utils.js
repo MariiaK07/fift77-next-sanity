@@ -1,13 +1,8 @@
 import { createClient, groq } from 'next-sanity';
+import clientConfig from './config/client-config';
 
-export const getAbout = async () => {
-  const client = createClient({
-    projectId: 'n8onodul',
-    dataset: 'production',
-    apiVersion: '2023-05-17',
-  });
-
-  return client.fetch(
+export const getAbout = async () => (
+  createClient(clientConfig).fetch(
     groq`*[_type == 'about'] {
       _id,
       _createdAt,
@@ -16,5 +11,5 @@ export const getAbout = async () => {
       'image': image.asset->url,
       description,
     }`,
-  );
-};
+  )
+);
