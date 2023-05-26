@@ -1,5 +1,5 @@
-import about from './about';
+import hero from './hero';
 
-const schemas = [about];
+const schemas = [hero];
 
 export default schemas;

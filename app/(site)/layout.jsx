@@ -1,5 +1,7 @@
-import Link from 'next/link';
 import '../globals.css';
+import './styles/main.scss';
+import Header from './sections/header';
+// import Footer from './sections/footer';
 
 export const metadata = {
   title: 'Fit77',
@@ -9,19 +11,13 @@ export const metadata = {
 const RootLayout = ({ children }) => (
   <html lang="uk">
     <body>
-      <header>
-        <Link href="/">
-          Navbar
-        </Link>
-      </header>
+      <Header />
 
       <main>
         {children}
       </main>
 
-      <footer>
-        Footer
-      </footer>
+      {/* <Footer /> */}
     </body>
   </html>
 );

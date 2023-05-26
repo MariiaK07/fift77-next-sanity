@@ -1,10 +1,10 @@
-import About from './components/about';
-import Contacts from './components/contacts';
+import Hero from './sections/hero';
+// import Contacts from './sections/contacts';
 
 const Home = async () => (
   <>
-    <About />
-    <Contacts />
+    <Hero />
+    {/* <Contacts /> */}
   </>
 );
 

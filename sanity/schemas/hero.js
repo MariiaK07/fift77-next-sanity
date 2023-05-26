@@ -1,5 +1,5 @@
-const about = {
-  name: 'about',
+const hero = {
+  name: 'hero',
   title: 'Головна',
   type: 'document',
   fields: [
@@ -35,9 +35,9 @@ const about = {
     {
       name: 'address',
       title: 'Адрес',
-      type: 'url',
+      type: 'string',
     },
   ],
 };
 
-export default about;
+export default hero;
