@@ -20,22 +20,32 @@ const hero = {
       type: 'string',
     },
     {
-      name: 'image',
+      name: 'heroImage',
       title: 'Картинка',
       type: 'image',
       options: { hotspot: true },
-      fields: [
-        {
-          name: 'alt',
-          title: 'Alt',
-          type: 'string',
-        },
-      ],
     },
     {
       name: 'address',
       title: 'Адрес',
       type: 'string',
+    },
+    {
+      name: 'introImage',
+      title: 'Фото засновниці',
+      type: 'image',
+      options: { hotspot: true },
+    },
+    {
+      name: 'introTitle',
+      title: 'Інтро від засновниці',
+      type: 'string',
+    },
+    {
+      name: 'introDetails',
+      title: 'Про засновницю',
+      type: 'array',
+      of: [{ type: 'block' }],
     },
   ],
 };

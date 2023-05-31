@@ -8,9 +8,12 @@ export const getHero = async () => (
       _createdAt,
       title,
       'slug': slug.current,
-      'image': image.asset->url,
+      'heroImage': heroImage.asset->url,
       description,
       address,
+      'introImage': introImage.asset->url,
+      introTitle,
+      introDetails,
     }`,
   )
 );
