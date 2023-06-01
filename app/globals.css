@@ -5,6 +5,7 @@
 html {
   font-family: var(--font-montserrat);
   color: #141414;
+  scroll-behavior: smooth !important;
 }
 
 body {
@@ -29,12 +30,4 @@ a {
   margin: 0 auto;
   padding: 0 96px;
   max-width: 1440px;
-}
-
-.flex-40 {
-  width: 42%;
-}
-
-.flex-60 {
-  width: 58%;
 }

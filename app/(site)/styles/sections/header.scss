@@ -1,13 +1,20 @@
+header {
+  z-index: 1;
+  position: fixed;
+  width: 100%;
+  background-color: rgba(254, 254, 254, 0.8);
+}
+
 .header {
   display: flex;
   justify-content: space-between;
   align-items: center;
   gap: 28px;
-  padding: 17px 0;
+  height: $height-header;
 
   &__logo {
     width: auto;
-    height: 38px;
+    height: auto;
   }
 
   &__nav {
@@ -32,12 +39,12 @@
         left: 0;
         bottom: 0;
         width: calc(100% + 12px);
-        height: 1px;
+        height: 0.5px;
         background: none;
       }
 
       &:hover:after {
-        background: $gradient;
+        background: $gradient-instagram;
       }
     }
   }
