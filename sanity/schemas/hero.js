@@ -9,12 +9,6 @@ const hero = {
       type: 'string',
     },
     {
-      name: 'slug',
-      title: 'Slug',
-      type: 'slug',
-      options: { source: 'name' },
-    },
-    {
       name: 'description',
       title: 'Опис',
       type: 'string',

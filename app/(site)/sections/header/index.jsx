@@ -10,7 +10,7 @@ const Header = () => {
   const setActiveLink = () => {
     const observable = {
       hero: document.querySelector('#hero'),
-      // classes: document.querySelector('#classes'),
+      classes: document.querySelector('#classes'),
       // schedule: document.querySelector('#schedule'),
       // price: document.querySelector('#price'),
       // trainers: document.querySelector('#trainers'),
@@ -19,7 +19,7 @@ const Header = () => {
 
     const pos = {
       hero: observable.hero.getBoundingClientRect(),
-      // classes: observable.classes.getBoundingClientRect(),
+      classes: observable.classes.getBoundingClientRect(),
       // schedule: observable.schedule.getBoundingClientRect(),
       // price: observable.price.getBoundingClientRect(),
       // trainers: observable.trainers.getBoundingClientRect(),
@@ -28,8 +28,8 @@ const Header = () => {
 
     if (pos.hero.top < window.innerHeight && pos.hero.bottom >= 0) {
       setActive('hero');
-    // } else if (pos.classes.top < window.innerHeight && pos.classes.bottom >= 0) {
-    //   setActive('classes');
+    } else if (pos.classes.top < window.innerHeight && pos.classes.bottom >= 0) {
+      setActive('classes');
     // } else if (pos.schedule.top < window.innerHeight && pos.schedule.bottom >= 0) {
     //   setActive('schedule');
     // } else if (pos.price.top < window.innerHeight && pos.price.bottom >= 0) {

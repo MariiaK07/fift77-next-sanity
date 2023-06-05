@@ -1,7 +1,7 @@
 import Image from 'next/image';
 import { PortableText } from '@portabletext/react';
 import { getHero } from '@/sanity/sanity-utils';
-import { playfair_display } from '../../../fonts';
+import { playfair_display } from '../../fonts';
 import Button from '../../components/Button';
 
 const Hero = async () => {

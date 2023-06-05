@@ -3,7 +3,7 @@ import '../globals.css';
 import './styles/main.scss';
 import Header from './sections/header';
 // import Footer from './sections/footer';
-import { montserrat } from '../fonts';
+import { montserrat } from './fonts';
 
 export const metadata = {
   title: 'Fit77',
