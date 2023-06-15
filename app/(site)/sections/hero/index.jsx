@@ -65,7 +65,13 @@ const Hero = async () => {
             <div className="hero__intro-right">
               <div className="hero__intro-text">
                 <div>
-                  <h3 className={`${playfair_display.variable} title hero__intro-title`}>
+                  <h3
+                    className={`
+                      ${playfair_display.variable}
+                      title
+                      hero__intro-title
+                    `}
+                  >
                     {hero[0].introTitle}
                   </h3>
                   <div className="hero__intro-details">

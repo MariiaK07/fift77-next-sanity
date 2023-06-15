@@ -1,6 +1,49 @@
 .card {
+  &__image-container {
+    position: relative;
+  }
+
   &__image {
     border-radius: 100px 100px 0px 0px;
     object-fit: cover;
+    transition: all 300ms;
+  }
+
+  &__description {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    max-width: 300px;
+    max-height: 294px;
+    padding: 16px;
+    text-align: center;
+    opacity: 0;
+    transition: opacity 300ms;
+  }
+
+  &:hover {
+    .card__description {
+      opacity: 1;
+    }
+
+    .card__image {
+      border-radius: 123px 123px 0px 0px;
+      filter: blur(7px);
+    }
+  }
+
+  &__title {
+    margin-top: 8px;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 1.3;
+    text-align: center;
+    text-transform: uppercase;
+    font-feature-settings: 'pnum' on, 'lnum' on;
   }
 }
