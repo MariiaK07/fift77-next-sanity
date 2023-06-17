@@ -51,16 +51,14 @@ const Header = () => {
     <header>
       <div className="container">
         <div className="header">
-          <Link
-            href="/"
-            className="header__logo"
-          >
+          <Link href="/">
             <Image
               src="/logo.svg"
               alt="Fit77"
               priority
               width={86}
               height={38}
+              className="header__logo"
             />
           </Link>
           <nav className="header__nav">

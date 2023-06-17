@@ -26,3 +26,14 @@ export const getClasses = async () => (
     }`,
   )
 );
+
+export const getSchedule = async () => (
+  createClient(clientConfig).fetch(
+    groq`*[_type == 'schedule'] {
+      _id,
+      title,
+      classes,
+      order,
+    }`,
+  )
+);

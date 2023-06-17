@@ -40,7 +40,7 @@ const Hero = async () => {
               <div className="hero__main-image-container">
                 <Image
                   src={hero[0].heroImage}
-                  alt="hero"
+                  alt="Засновниця"
                   width={718}
                   height={530}
                   className="hero__main-image"
@@ -54,7 +54,7 @@ const Hero = async () => {
               <div className="hero__intro-image-container">
                 <Image
                   src={hero[0].introImage}
-                  alt="founder"
+                  alt="Засновниця"
                   width={400}
                   height={540}
                   className="hero__intro-image"
