@@ -11,17 +11,11 @@ const Card = ({ item }) => (
         height={300}
         className="card__image"
       />
-      <p className="card__description">
-        {item.description}
-      </p>
+      <div className="card__description">
+        <p>{item.description}</p>
+      </div>
     </div>
-    <h3
-      className={`
-        ${playfair_display.variable}
-        title
-        card__title
-      `}
-    >
+    <h3 className={`${playfair_display.variable} title card__title`}>
       {item.title}
     </h3>
   </div>

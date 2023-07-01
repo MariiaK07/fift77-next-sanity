@@ -1,12 +1,13 @@
 .card {
   &__image-container {
     position: relative;
+    font-size: 0;
   }
 
   &__image {
     border-radius: 100px 100px 0px 0px;
     object-fit: cover;
-    transition: all 300ms;
+    transition: all 500ms;
   }
 
   &__description {
@@ -18,12 +19,30 @@
     right: 0;
     bottom: 0;
     left: 0;
-    max-width: 300px;
-    max-height: 294px;
     padding: 16px;
     text-align: center;
     opacity: 0;
-    transition: opacity 300ms;
+    transition: opacity 500ms;
+
+    &::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      left: 0;
+      border-radius: 123px 123px 0px 0px;
+      background: rgba(211, 211, 211, 0.5);
+      filter: blur(7px);
+      z-index: 0;
+    }
+
+    p {
+      z-index: 1;
+      font-size: 16px;
+      line-height: 1.5;
+      opacity: 1;
+    }
   }
 
   &:hover {
@@ -34,6 +53,7 @@
     .card__image {
       border-radius: 123px 123px 0px 0px;
       filter: blur(7px);
+      background: rgba(211, 211, 211, 0.8);
     }
   }
 

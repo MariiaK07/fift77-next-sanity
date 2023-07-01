@@ -22,6 +22,14 @@ a {
   color: #141414;
 }
 
+table {
+  width: 100%;
+}
+
+td {
+  text-align: center;
+}
+
 .title {
   font-family: var(--font-playfair-display);
 }
