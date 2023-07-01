@@ -37,3 +37,13 @@ export const getSchedule = async () => (
     }`,
   )
 );
+
+export const getPrices = async () => (
+  createClient(clientConfig).fetch(
+    groq`*[_type == 'price'] {
+      _id,
+      units,
+      'image': image.asset->url,
+    }`,
+  )
+);
