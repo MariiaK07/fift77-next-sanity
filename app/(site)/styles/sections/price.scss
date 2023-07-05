@@ -1,0 +1,41 @@
+#price {
+  position: relative;
+}
+
+.price {
+  // display: flex;
+  // gap: 40px;
+  padding: $whitespace-80 0;
+
+  &__units {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    padding-bottom: 60px;
+    // max-width: 703px;
+  }
+
+  &__unit {
+    display: flex;
+    gap: 24px;
+    font-size: 18px;
+
+    &-price {
+      display: flex;
+      flex-direction: column;
+      gap: 16px;
+      font-weight: 500;
+      // min-width: 280px;
+    }
+  }
+
+  &__image-container {
+    position: absolute;
+    top: $whitespace-80;
+    right: 0;
+  }
+
+  &__button {
+    text-align: center;
+  }
+}

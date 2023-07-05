@@ -9,11 +9,6 @@ const classes = {
       type: 'string',
     },
     {
-      name: 'order',
-      title: 'Порядковий номер',
-      type: 'string',
-    },
-    {
       name: 'description',
       title: 'Опис заняття',
       type: 'string',
@@ -23,6 +18,11 @@ const classes = {
       title: 'Картинка заняття',
       type: 'image',
       options: { hotspot: true },
+    },
+    {
+      name: 'order',
+      title: 'Порядковий номер',
+      type: 'string',
     },
   ],
 };

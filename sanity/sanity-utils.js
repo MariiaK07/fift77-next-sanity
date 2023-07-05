@@ -47,3 +47,16 @@ export const getPrices = async () => (
     }`,
   )
 );
+
+export const getTrainers = async () => (
+  createClient(clientConfig).fetch(
+    groq`*[_type == 'trainers'] {
+      _id,
+      name,
+      class,
+      order,
+      'imageFront': imageFront.asset->url,
+      'imageBack': imageBack.asset->url,
+    }`,
+  )
+);

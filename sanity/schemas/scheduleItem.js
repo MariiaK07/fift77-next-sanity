@@ -1,5 +1,5 @@
-const classItem = {
-  name: 'classItem',
+const scheduleItem = {
+  name: 'scheduleItem',
   title: 'Заняття',
   type: 'object',
   fields: [
@@ -21,4 +21,4 @@ const classItem = {
   ],
 };
 
-export default classItem;
+export default scheduleItem;

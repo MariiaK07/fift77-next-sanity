@@ -12,7 +12,7 @@ const schedule = {
       name: 'classes',
       title: 'Заняття',
       type: 'array',
-      of: [{ type: 'classItem' }],
+      of: [{ type: 'scheduleItem' }],
     },
     {
       name: 'order',

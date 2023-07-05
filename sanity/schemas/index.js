@@ -1,10 +1,19 @@
 import hero from './hero';
 import classes from './classes';
 import schedule from './schedule';
-import classItem from './classItem';
+import scheduleItem from './scheduleItem';
 import prices from './prices';
 import priceItem from './priceItem';
+import trainers from './trainers';
 
-const schemas = [hero, classes, schedule, classItem, prices, priceItem];
+const schemas = [
+  hero,
+  classes,
+  schedule,
+  scheduleItem,
+  prices,
+  priceItem,
+  trainers,
+];
 
 export default schemas;
