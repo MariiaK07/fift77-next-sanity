@@ -11,18 +11,18 @@ const Header = () => {
     const observable = {
       hero: document.querySelector('#hero'),
       classes: document.querySelector('#classes'),
-      // schedule: document.querySelector('#schedule'),
-      // price: document.querySelector('#price'),
-      // trainers: document.querySelector('#trainers'),
+      schedule: document.querySelector('#schedule'),
+      price: document.querySelector('#price'),
+      trainers: document.querySelector('#trainers'),
       // contacts: document.querySelector('#contacts'),
     };
 
     const pos = {
       hero: observable.hero.getBoundingClientRect(),
       classes: observable.classes.getBoundingClientRect(),
-      // schedule: observable.schedule.getBoundingClientRect(),
-      // price: observable.price.getBoundingClientRect(),
-      // trainers: observable.trainers.getBoundingClientRect(),
+      schedule: observable.schedule.getBoundingClientRect(),
+      price: observable.price.getBoundingClientRect(),
+      trainers: observable.trainers.getBoundingClientRect(),
       // contacts: observable.contacts.getBoundingClientRect(),
     };
 
@@ -30,12 +30,12 @@ const Header = () => {
       setActive('hero');
     } else if (pos.classes.top < window.innerHeight && pos.classes.bottom >= 0) {
       setActive('classes');
-    // } else if (pos.schedule.top < window.innerHeight && pos.schedule.bottom >= 0) {
-    //   setActive('schedule');
-    // } else if (pos.price.top < window.innerHeight && pos.price.bottom >= 0) {
-    //   setActive('price');
-    // } else if (pos.trainers.top < window.innerHeight && pos.trainers.bottom >= 0) {
-    //   setActive('trainers');
+    } else if (pos.schedule.top < window.innerHeight && pos.schedule.bottom >= 0) {
+      setActive('schedule');
+    } else if (pos.price.top < window.innerHeight && pos.price.bottom >= 0) {
+      setActive('price');
+    } else if (pos.trainers.top < window.innerHeight && pos.trainers.bottom >= 0) {
+      setActive('trainers');
     // } else if (pos.contacts.top < window.innerHeight && pos.contacts.bottom >= 0) {
     //   setActive('contacts');
     }

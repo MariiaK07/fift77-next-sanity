@@ -23,20 +23,18 @@ const Trainers = async () => {
                   alt={trainer.name}
                   width={294}
                   height={300}
-                  className="trainers__trainer-image--front trainers__trainer-image--front"
+                  className="trainers__trainer-image"
                 />
-              </div>
-              {trainer.imageBack && (
-                <div className="trainers__trainer-image-container">
+                {trainer.imageBack && (
                   <Image
                     src={trainer.imageBack}
                     alt={trainer.name}
                     width={294}
                     height={300}
-                    className="trainers__trainer-image--back trainers__trainer-image--back"
+                    className="trainers__trainer-image trainers__trainer-image--back"
                   />
-                </div>
-              )}
+                )}
+              </div>
               <h3 className={`${playfair_display.variable} title trainers__trainer-name`}>
                 {trainer.name}
               </h3>

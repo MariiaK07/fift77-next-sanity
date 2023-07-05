@@ -1,0 +1,52 @@
+.trainers {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  column-gap: 24px;
+  row-gap: 40px;
+  padding: $whitespace-80 0;
+
+  &__trainer {
+    &-image-container {
+      position: relative;
+      font-size: 0;
+    }
+
+    &-image {
+      border-radius: 100px 100px 0px 0px;
+      object-fit: cover;
+      transition: all 500ms;
+
+      &--back {
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        opacity: 0;
+      }
+    }
+
+    &:hover {
+      .trainers__trainer-image--back {
+        opacity: 1;
+      }
+    }
+
+    &-name {
+      margin-top: 8px;
+      font-weight: 600;
+      font-size: 24px;
+      line-height: 1.3;
+      text-align: center;
+      text-transform: uppercase;
+      font-feature-settings: 'pnum' on, 'lnum' on;
+    }
+
+    &-class {
+      text-align: center;
+      font-weight: 400;
+      font-size: 24px;
+    }
+  }
+}
