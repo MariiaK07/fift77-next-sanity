@@ -3,6 +3,7 @@ import Classes from './sections/classes';
 import Schedule from './sections/schedule';
 import Price from './sections/price';
 import Trainers from './sections/trainers';
+import Gallery from './sections/gallery';
 // import Contacts from './sections/contacts';
 
 const Home = async () => (
@@ -12,6 +13,7 @@ const Home = async () => (
     <Schedule />
     <Price />
     <Trainers />
+    <Gallery />
     {/* <Contacts /> */}
   </>
 );
