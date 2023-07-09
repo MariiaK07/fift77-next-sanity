@@ -54,7 +54,11 @@ const Contacts = async () => {
               src="images/icons/telegram.svg"
               alt="telegram"
             />
-            <a href={contacts[0].telegram}>
+            <a
+              href={contacts[0].telegram}
+              target="_blank"
+              rel="noreferrer"
+            >
               Наш Telegram
             </a>
           </div>
@@ -65,7 +69,11 @@ const Contacts = async () => {
               src="images/icons/instagram.svg"
               alt="instagram"
             />
-            <a href={contacts[0].instagram}>
+            <a
+              href={contacts[0].instagram}
+              target="_blank"
+              rel="noreferrer"
+            >
               Наш Instagram
             </a>
           </div>
@@ -76,7 +84,11 @@ const Contacts = async () => {
               src="images/icons/video.svg"
               alt="video"
             />
-            <a href={contacts[0].video}>
+            <a
+              href={contacts[0].video}
+              target="_blank"
+              rel="noreferrer"
+            >
               Відеоінструкція як нас знайти
             </a>
           </div>
