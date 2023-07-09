@@ -5,7 +5,7 @@ const hero = {
   fields: [
     {
       name: 'title',
-      title: 'Заголовок',
+      title: 'Назва секції',
       type: 'string',
     },
     {
@@ -21,7 +21,7 @@ const hero = {
     },
     {
       name: 'address',
-      title: 'Адрес',
+      title: 'Адреса',
       type: 'string',
     },
     {

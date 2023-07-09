@@ -60,3 +60,18 @@ export const getTrainers = async () => (
     }`,
   )
 );
+
+export const getContacts = async () => (
+  createClient(clientConfig).fetch(
+    groq`*[_type == 'contacts'] {
+      _id,
+      title,
+      address,
+      embedGoogleMaps,
+      openHours,
+      telegram,
+      instagram,
+      video
+    }`,
+  )
+);

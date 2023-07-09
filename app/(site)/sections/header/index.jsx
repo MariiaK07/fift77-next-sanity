@@ -14,7 +14,7 @@ const Header = () => {
       schedule: document.querySelector('#schedule'),
       price: document.querySelector('#price'),
       trainers: document.querySelector('#trainers'),
-      // contacts: document.querySelector('#contacts'),
+      contacts: document.querySelector('#contacts'),
     };
 
     const pos = {
@@ -23,7 +23,7 @@ const Header = () => {
       schedule: observable.schedule.getBoundingClientRect(),
       price: observable.price.getBoundingClientRect(),
       trainers: observable.trainers.getBoundingClientRect(),
-      // contacts: observable.contacts.getBoundingClientRect(),
+      contacts: observable.contacts.getBoundingClientRect(),
     };
 
     if (pos.hero.top < window.innerHeight && pos.hero.bottom >= 0) {
@@ -36,8 +36,8 @@ const Header = () => {
       setActive('price');
     } else if (pos.trainers.top < window.innerHeight && pos.trainers.bottom >= 0) {
       setActive('trainers');
-    // } else if (pos.contacts.top < window.innerHeight && pos.contacts.bottom >= 0) {
-    //   setActive('contacts');
+    } else if (pos.contacts.top < window.innerHeight && pos.contacts.bottom >= 0) {
+      setActive('contacts');
     }
   };
 
