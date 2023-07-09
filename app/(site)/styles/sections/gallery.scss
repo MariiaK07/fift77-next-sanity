@@ -31,9 +31,12 @@
   &__images {
     display: flex;
     overflow-x: scroll;
-    scroll-snap-type: x mandatory;
-    scrollbar-color: transparent;
+    scrollbar-width: none;
     gap: 16px;
+
+    &::-webkit-scrollbar {
+      display: none;
+    }
   }
 
   &__image-container {
