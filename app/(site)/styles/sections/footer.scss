@@ -1,0 +1,18 @@
+#footer {
+  background: $gradient-footer;
+}
+
+.footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  padding: 34px 0;
+
+  &__copyright {
+    color: $color-white;
+  }
+  
+  &__cta {
+    align-self: center;
+  }
+}

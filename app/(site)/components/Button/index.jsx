@@ -1,12 +1,14 @@
 import Link from 'next/link';
 
-const Button = () => (
+const Button = ({ type }) => (
   <Link
     href="https://www.instagram.com/fit77_fitness_studio/"
     target="_blank"
-    className="button"
+    className={type === 'color' ? 'button button--color' : 'button button--white'}
   >
-    Записатися на заняття
+    {type === 'color'
+      ? ('Записатися на заняття')
+      : <span className="button__text">Записатися на заняття</span>}
   </Link>
 );
 

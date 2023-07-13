@@ -127,7 +127,7 @@ const Hero = async () => {
                 </div>
 
                 <div className="hero__cta-button">
-                  <Button />
+                  <Button type="color" />
                 </div>
               </div>
             </div>

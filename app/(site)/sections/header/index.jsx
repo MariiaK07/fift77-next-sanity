@@ -3,6 +3,7 @@
 import Link from 'next/link';
 import Image from 'next/image';
 import { useState, useEffect } from 'react';
+import HamburgerMenu from '../../components/HamburgerMenu';
 
 const Header = () => {
   const [active, setActive] = useState('');
@@ -61,6 +62,9 @@ const Header = () => {
               className="header__logo"
             />
           </Link>
+
+          <HamburgerMenu />
+
           <nav className="header__nav">
             <Link
               href="#hero"

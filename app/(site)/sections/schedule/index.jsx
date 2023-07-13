@@ -13,7 +13,10 @@ const Schedule = async () => {
       <div className="container">
         <div className="schedule">
           {sortedDaysOfTheWeek.map(days => (
-            <div className="schedule__unit">
+            <div
+              className="schedule__unit"
+              key={days.title}
+            >
               <h3 className={`${playfair_display.variable} schedule__unit-title title`}>
                 {days.title}
               </h3>

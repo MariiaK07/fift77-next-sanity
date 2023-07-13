@@ -2,7 +2,7 @@ import React from 'react';
 import '../globals.css';
 import './styles/main.scss';
 import Header from './sections/header';
-// import Footer from './sections/footer';
+import Footer from './sections/footer';
 import { montserrat } from './fonts';
 
 export const metadata = {
@@ -23,7 +23,7 @@ const RootLayout = ({ children }) => (
           {children}
         </main>
 
-        {/* <Footer /> */}
+        <Footer />
       </React.StrictMode>
     </body>
   </html>

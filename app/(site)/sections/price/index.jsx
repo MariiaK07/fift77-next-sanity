@@ -32,7 +32,7 @@ const Price = async () => {
             />
           </div>
           <div className="price__button">
-            <Button />
+            <Button type="color" />
           </div>
         </div>
       </div>
