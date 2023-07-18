@@ -9,13 +9,13 @@ const HamburgerMenu = () => {
 
   return (
     <div
-      className={`hamburger-menu ${isOpen ? 'open' : ''}`}
+      className={`hamburger-menu ${isOpen ? 'hamburger-menu--open' : ''}`}
       onClick={handleClick}
       onKeyDown={handleClick}
     >
-      <span className="line" />
-      <span className="line" />
-      <span className="line" />
+      <span />
+      <span />
+      <span />
     </div>
   );
 };
