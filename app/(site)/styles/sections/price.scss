@@ -31,7 +31,7 @@
 
   &__image-container {
     position: absolute;
-    top: $whitespace-80;
+    top: calc($whitespace-80 + $whitespace-80);
     right: 0;
   }
 

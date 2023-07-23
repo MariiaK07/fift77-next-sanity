@@ -1,4 +1,6 @@
 import Image from 'next/image';
+import Marquee from 'react-fast-marquee';
+import MarqueeText from '../../components/MarqueeText';
 import { getTrainers } from '@/sanity/sanity-utils';
 import { playfair_display } from '../../fonts';
 
@@ -10,6 +12,10 @@ const Trainers = async () => {
 
   return (
     <section id="trainers">
+      <Marquee speed={100}>
+        <MarqueeText text="тренери" />
+      </Marquee>
+
       <div className="container">
         <div className="trainers">
           {sortedTrainers.map(trainer => (

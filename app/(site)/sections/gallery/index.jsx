@@ -2,6 +2,8 @@
 
 import Image from 'next/image';
 import { useState, useRef } from 'react';
+import Marquee from 'react-fast-marquee';
+import MarqueeText from '../../components/MarqueeText';
 
 const Gallery = () => {
   const [isDown, setIsDown] = useState(false);
@@ -29,25 +31,31 @@ const Gallery = () => {
 
   return (
     <section id="gallery" className="gallery">
-      <div
-        className="gallery__images"
-        ref={galleryRef}
-        onMouseDown={handleMouseDown}
-        onMouseMove={handleMouseMove}
-        onMouseUp={handleMouseUp}
-        onMouseLeave={handleMouseUp}
-      >
-        {[...Array(11)].map((_, index) => (
-          <div className="gallery__image-container" key={`${index + 1}`}>
-            <Image
-              src={`/images/gallery/photo-${index + 1}.png`}
-              alt={`Photo ${index + 1}`}
-              width={400}
-              height={400}
-              className="gallery__image"
-            />
-          </div>
-        ))}
+      <Marquee speed={100}>
+        <MarqueeText text="fit 77" />
+      </Marquee>
+
+      <div className="gallery__container">
+        <div
+          className="gallery__images"
+          ref={galleryRef}
+          onMouseDown={handleMouseDown}
+          onMouseMove={handleMouseMove}
+          onMouseUp={handleMouseUp}
+          onMouseLeave={handleMouseUp}
+        >
+          {[...Array(11)].map((_, index) => (
+            <div className="gallery__image-container" key={`${index + 1}`}>
+              <Image
+                src={`/images/gallery/photo-${index + 1}.png`}
+                alt={`Photo ${index + 1}`}
+                width={400}
+                height={400}
+                className="gallery__image"
+              />
+            </div>
+          ))}
+        </div>
       </div>
     </section>
   );

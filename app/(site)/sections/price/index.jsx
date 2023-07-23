@@ -1,13 +1,19 @@
 import Image from 'next/image';
 import { PortableText } from '@portabletext/react';
+import Marquee from 'react-fast-marquee';
 import { getPrices } from '@/sanity/sanity-utils';
 import Button from '../../components/Button';
+import MarqueeText from '../../components/MarqueeText';
 
 const Price = async () => {
   const prices = await getPrices();
 
   return (
     <section id="price">
+      <Marquee speed={100}>
+        <MarqueeText text="price" />
+      </Marquee>
+
       <div className="container">
         <div className="price">
           <div className="price__units">

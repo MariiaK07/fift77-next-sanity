@@ -1,0 +1,28 @@
+.marquee-container {
+  width: 100%;
+  height: 80px;
+  padding: 24px 0;
+  border-top: 1px solid $color-black;
+  border-bottom: 1px solid $color-black;
+  overflow: hidden;
+}
+
+
+.marquee {
+  .child {
+    span {
+      font-size: 24px;
+      text-transform: uppercase;
+      padding-right: 30px;
+      font-feature-settings: "pnum" on, "lnum" on;
+
+      &:nth-child(2n) {
+        font-weight: 600;
+      }
+    }
+
+    &:nth-child(2n) {
+      font-weight: 600;
+    }
+  }
+}

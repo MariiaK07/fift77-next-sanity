@@ -1,4 +1,6 @@
 import Image from 'next/image';
+import Marquee from 'react-fast-marquee';
+import MarqueeText from '../../components/MarqueeText';
 import { getClasses } from '@/sanity/sanity-utils';
 import { playfair_display } from '../../fonts';
 
@@ -10,6 +12,10 @@ const Classes = async () => {
 
   return (
     <section id="classes">
+      <Marquee speed={100}>
+        <MarqueeText text="Види занять" />
+      </Marquee>
+
       <div className="container">
         <div className="classes">
           {sortedClasses.map(classItem => (

@@ -1,6 +1,8 @@
 import Image from 'next/image';
+import Marquee from 'react-fast-marquee';
 import { getSchedule } from '@/sanity/sanity-utils';
 import { playfair_display } from '../../fonts';
+import MarqueeText from '../../components/MarqueeText';
 
 const Schedule = async () => {
   const daysOfTheWeek = await getSchedule();
@@ -10,6 +12,10 @@ const Schedule = async () => {
 
   return (
     <section id="schedule">
+      <Marquee speed={100}>
+        <MarqueeText text="розклад занять" />
+      </Marquee>
+
       <div className="container">
         <div className="schedule">
           {sortedDaysOfTheWeek.map(days => (
@@ -50,7 +56,10 @@ const Schedule = async () => {
                 </div>
 
                 {days.classes.map(classItem => (
-                  <div className="schedule__table-row">
+                  <div
+                    className="schedule__table-row"
+                    key={classItem.time}
+                  >
                     <div className="schedule__table-cell">
                       {classItem.time}
                     </div>
