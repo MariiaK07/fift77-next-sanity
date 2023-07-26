@@ -1,56 +1,31 @@
 import { playfair_display } from '../../fonts';
 
 function MarqueeText({ text }) {
+  const spanClass = `marquee__word title ${playfair_display.variable}`;
+
   return (
     <>
-      <span className={`marquee__word title ${playfair_display.variable}`}>
-        {text}
-      </span>
-      <span className={`marquee__word title ${playfair_display.variable}`}>
-        {text}
-      </span>
-      <span className={`marquee__word title ${playfair_display.variable}`}>
-        {text}
-      </span>
-      <span className={`marquee__word title ${playfair_display.variable}`}>
-        {text}
-      </span>
-      <span className={`marquee__word title ${playfair_display.variable}`}>
-        {text}
-      </span>
-      <span className={`marquee__word title ${playfair_display.variable}`}>
-        {text}
-      </span>
-      <span className={`marquee__word title ${playfair_display.variable}`}>
-        {text}
-      </span>
-      <span className={`marquee__word title ${playfair_display.variable}`}>
-        {text}
-      </span>
-      <span className={`marquee__word title ${playfair_display.variable}`}>
-        {text}
-      </span>
-      <span className={`marquee__word title ${playfair_display.variable}`}>
-        {text}
-      </span>
-      <span className={`marquee__word title ${playfair_display.variable}`}>
-        {text}
-      </span>
-      <span className={`marquee__word title ${playfair_display.variable}`}>
-        {text}
-      </span>
-      <span className={`marquee__word title ${playfair_display.variable}`}>
-        {text}
-      </span>
-      <span className={`marquee__word title ${playfair_display.variable}`}>
-        {text}
-      </span>
-      <span className={`marquee__word title ${playfair_display.variable}`}>
-        {text}
-      </span>
-      <span className={`marquee__word title ${playfair_display.variable}`}>
-        {text}
-      </span>
+      <span className={spanClass}>{text}</span>
+      <span className={spanClass}>{text}</span>
+      <span className={spanClass}>{text}</span>
+      <span className={spanClass}>{text}</span>
+      <span className={spanClass}>{text}</span>
+      <span className={spanClass}>{text}</span>
+      <span className={spanClass}>{text}</span>
+      <span className={spanClass}>{text}</span>
+      <span className={spanClass}>{text}</span>
+      <span className={spanClass}>{text}</span>
+      <span className={spanClass}>{text}</span>
+      <span className={spanClass}>{text}</span>
+      <span className={spanClass}>{text}</span>
+      <span className={spanClass}>{text}</span>
+      <span className={spanClass}>{text}</span>
+      <span className={spanClass}>{text}</span>
+      <span className={spanClass}>{text}</span>
+      <span className={spanClass}>{text}</span>
+      <span className={spanClass}>{text}</span>
+      <span className={spanClass}>{text}</span>
+      <span className={spanClass}>{text}</span>
     </>
   );
 }

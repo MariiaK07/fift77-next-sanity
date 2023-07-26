@@ -1,11 +1,11 @@
 @mixin forMobile {
-  @media (min-width: 1200px) {
+  @media (max-width: 648px) {
     @content;
   }
 }
 
 @mixin forTablet {
-  @media (min-width: 1200px) {
+  @media (max-width: 1200px) {
     @content;
   }
 }

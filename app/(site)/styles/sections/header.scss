@@ -2,7 +2,7 @@ header {
   z-index: 100;
   position: fixed;
   width: 100%;
-  background-color: rgba(254, 254, 254, 0.8);
+  background-color: $color-white-rgba;
 }
 
 .header {
@@ -12,44 +12,21 @@ header {
   gap: 28px;
   height: $height-header;
 
+  @include forMobile {
+    height: $height-header-mobile;
+  }
+
   &__logo {
-    width: auto;
-    height: auto;
-  }
+    z-index: 999;
 
-  &__nav {
-    display: flex;
-    gap: 16px;
-  }
+    img {
+      width: auto;
+      height: auto;
 
-  &__nav-item {
-    position: relative;
-    padding: 8px 12px;
-    line-height: 24px;
-    border-bottom: 1px solid transparent;
-
-    &:last-child {
-      padding-right: 0;
-      border: none;
-
-      &:after {
-        content: '';
-        display: inline-block;
-        position: absolute;
-        left: 0;
-        bottom: 0;
-        width: calc(100% + 12px);
-        height: 0.5px;
-        background: none;
-      }
-
-      &:hover:after {
-        background: $gradient-instagram;
+      @include forMobile {
+        width: 56px;
+        margin-top: 8px;
       }
     }
-  }
-
-  &__nav-item:hover, .active {
-    border-color: $color-gray;
   }
 }

@@ -45,7 +45,7 @@ function Gallery() {
           onMouseLeave={handleMouseUp}
         >
           {[...Array(11)].map((_, index) => (
-            <div className="gallery__image-container" key={`${index + 1}`}>
+            <div className="gallery__image-container" key={index + 1}>
               <Image
                 src={`/images/gallery/photo-${index + 1}.png`}
                 alt={`Photo ${index + 1}`}

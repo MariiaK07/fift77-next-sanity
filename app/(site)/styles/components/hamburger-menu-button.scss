@@ -1,9 +1,14 @@
-.hamburger-menu {
+.hamburger-menu-button {
   z-index: 999;
   position: relative;
   width: 24px;
   height: 24px;
+  display: none;
   cursor: pointer;
+
+  @include forTablet {
+    display: block;
+  }
 
   span {
     position: absolute;
