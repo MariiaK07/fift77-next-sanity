@@ -5,7 +5,7 @@ import { getPrices } from '@/sanity/sanity-utils';
 import Button from '../../components/Button';
 import MarqueeText from '../../components/MarqueeText';
 
-const Price = async () => {
+async function Price() {
   const prices = await getPrices();
 
   return (
@@ -44,6 +44,6 @@ const Price = async () => {
       </div>
     </section>
   );
-};
+}
 
 export default Price;

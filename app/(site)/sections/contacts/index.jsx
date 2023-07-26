@@ -5,7 +5,7 @@ import MarqueeText from '../../components/MarqueeText';
 import { getContacts } from '@/sanity/sanity-utils';
 import { playfair_display } from '../../fonts';
 
-const Contacts = async () => {
+async function Contacts() {
   const contacts = await getContacts();
 
   return (
@@ -104,6 +104,6 @@ const Contacts = async () => {
       </div>
     </section>
   );
-};
+}
 
 export default Contacts;

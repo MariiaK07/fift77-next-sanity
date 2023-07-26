@@ -4,7 +4,7 @@ import MarqueeText from '../../components/MarqueeText';
 import { getTrainers } from '@/sanity/sanity-utils';
 import { playfair_display } from '../../fonts';
 
-const Trainers = async () => {
+async function Trainers() {
   const trainers = await getTrainers();
   const sortedTrainers = trainers.sort((prevItem, currItem) => (
     prevItem.order - currItem.order
@@ -53,6 +53,6 @@ const Trainers = async () => {
       </div>
     </section>
   );
-};
+}
 
 export default Trainers;

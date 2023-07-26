@@ -5,7 +5,7 @@ import { useState, useRef } from 'react';
 import Marquee from 'react-fast-marquee';
 import MarqueeText from '../../components/MarqueeText';
 
-const Gallery = () => {
+function Gallery() {
   const [isDown, setIsDown] = useState(false);
   const [startX, setStartX] = useState(null);
   const [scrollLeft, setScrollLeft] = useState(0);
@@ -59,6 +59,6 @@ const Gallery = () => {
       </div>
     </section>
   );
-};
+}
 
 export default Gallery;

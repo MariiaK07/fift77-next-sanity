@@ -4,7 +4,7 @@ import { getHero } from '@/sanity/sanity-utils';
 import { playfair_display } from '../../fonts';
 import Button from '../../components/Button';
 
-const Hero = async () => {
+async function Hero() {
   const hero = await getHero();
 
   return (
@@ -136,6 +136,6 @@ const Hero = async () => {
       </div>
     </section>
   );
-};
+}
 
 export default Hero;

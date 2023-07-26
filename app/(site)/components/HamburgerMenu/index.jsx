@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 
-const HamburgerMenu = () => {
+function HamburgerMenu() {
   const [isOpen, setIsOpen] = useState(false);
 
   const handleClick = () => {
@@ -18,6 +18,6 @@ const HamburgerMenu = () => {
       <span />
     </div>
   );
-};
+}
 
 export default HamburgerMenu;

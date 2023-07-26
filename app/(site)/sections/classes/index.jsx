@@ -4,7 +4,7 @@ import MarqueeText from '../../components/MarqueeText';
 import { getClasses } from '@/sanity/sanity-utils';
 import { playfair_display } from '../../fonts';
 
-const Classes = async () => {
+async function Classes() {
   const classes = await getClasses();
   const sortedClasses = classes.sort((prevItem, currItem) => (
     prevItem.order - currItem.order
@@ -44,6 +44,6 @@ const Classes = async () => {
       </div>
     </section>
   );
-};
+}
 
 export default Classes;

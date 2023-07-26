@@ -4,7 +4,7 @@ import { getSchedule } from '@/sanity/sanity-utils';
 import { playfair_display } from '../../fonts';
 import MarqueeText from '../../components/MarqueeText';
 
-const Schedule = async () => {
+async function Schedule() {
   const daysOfTheWeek = await getSchedule();
   const sortedDaysOfTheWeek = daysOfTheWeek.sort((prevItem, currItem) => (
     prevItem.order - currItem.order
@@ -78,6 +78,6 @@ const Schedule = async () => {
       </div>
     </section>
   );
-};
+}
 
 export default Schedule;
