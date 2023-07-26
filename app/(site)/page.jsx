@@ -6,16 +6,18 @@ import Trainers from './sections/trainers';
 import Gallery from './sections/gallery';
 import Contacts from './sections/contacts';
 
-const Home = async () => (
-  <>
-    <Hero />
-    <Classes />
-    <Schedule />
-    <Price />
-    <Trainers />
-    <Gallery />
-    <Contacts />
-  </>
-);
+async function Home() {
+  return (
+    <>
+      <Hero />
+      <Classes />
+      <Schedule />
+      <Price />
+      <Trainers />
+      <Gallery />
+      <Contacts />
+    </>
+  );
+}
 
 export default Home;
