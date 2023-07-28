@@ -46,6 +46,15 @@ async function Hero() {
                   className="hero__main-image"
                 />
               </div>
+              <div className="hero__main-address hero__main-address--mobile">
+                <Image
+                  width={24}
+                  height={24}
+                  src="images/icons/location.svg"
+                  alt="location"
+                />
+                <p>{hero[0].address}</p>
+              </div>
             </div>
           </div>
 

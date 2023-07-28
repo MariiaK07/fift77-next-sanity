@@ -15,4 +15,14 @@
 @import 'components/hamburger-menu-button';
 @import 'components/marquee';
 @import 'components/menu';
-// @import 'components/mobile-menu';
+
+
+.container {
+  margin: 0 auto;
+  padding: 0 96px;
+  max-width: 1440px;
+
+  @include forMobile {
+    padding: 0 16px;
+  }
+}

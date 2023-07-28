@@ -19,7 +19,7 @@
     background-color: $color-white-rgba;
 
     transform: translateY(-100vh);
-    transition: transform 300ms;
+    transition: transform 500ms;
 
     &-open {
       transform: translateY(0);

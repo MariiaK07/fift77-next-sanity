@@ -33,9 +33,3 @@ td {
 .title {
   font-family: var(--font-playfair-display);
 }
-
-.container {
-  margin: 0 auto;
-  padding: 0 96px;
-  max-width: 1440px;
-}
