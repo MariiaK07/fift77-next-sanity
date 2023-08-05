@@ -20,6 +20,12 @@ const hero = {
       options: { hotspot: true },
     },
     {
+      name: 'heroImageMobile',
+      title: 'Картинка для мобільної версії',
+      type: 'image',
+      options: { hotspot: true },
+    },
+    {
       name: 'address',
       title: 'Адреса',
       type: 'string',

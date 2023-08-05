@@ -38,13 +38,19 @@ async function Hero() {
 
             <div className="hero__main-right">
               <div className="hero__main-image-container">
-                <Image
-                  src={hero[0].heroImage}
-                  alt="Засновниця"
-                  width={718}
-                  height={530}
-                  className="hero__main-image"
-                />
+                <picture>
+                  <source
+                    srcSet={hero[0].heroImageMobile}
+                    media="(max-width: 648px)"
+                  />
+                  <Image
+                    src={hero[0].heroImage}
+                    alt="Засновниця"
+                    width={718}
+                    height={530}
+                    className="hero__main-image"
+                  />
+                </picture>
               </div>
               <div className="hero__main-address hero__main-address--mobile">
                 <Image
@@ -85,6 +91,16 @@ async function Hero() {
                   </h3>
                   <div className="hero__intro-details">
                     <PortableText value={hero[0].introDetails} />
+                  </div>
+
+                  <div className="hero__intro-image-mobile-container">
+                    <Image
+                      src={hero[0].introImage}
+                      alt="Засновниця"
+                      width={343}
+                      height={300}
+                      className="hero__intro-image"
+                    />
                   </div>
 
                   <div className="hero__services">

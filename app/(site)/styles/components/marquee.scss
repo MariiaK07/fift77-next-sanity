@@ -6,6 +6,10 @@
   border-bottom: 1px solid $color-black;
   overflow: hidden;
   user-select: none;
+
+  @include forMobile {
+    height: 40px;
+  }
 }
 
 
@@ -19,6 +23,10 @@
 
       &:nth-child(2n) {
         font-weight: 600;
+      }
+
+      @include forMobile {
+        font-size: 18px;
       }
     }
 

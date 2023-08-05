@@ -5,6 +5,12 @@
   column-gap: 24px;
   row-gap: 40px;
   padding: $whitespace-80 0;
+  user-select: none;
+
+  @include forMobile {
+    padding: $whitespace-40 0 $whitespace-60;
+    row-gap: 32px;
+  }
 
   &__trainer {
     &-image-container {
@@ -41,12 +47,20 @@
       text-align: center;
       text-transform: uppercase;
       font-feature-settings: 'pnum' on, 'lnum' on;
+
+      @include forMobile {
+        font-size: 20px;
+      }
     }
 
     &-class {
       text-align: center;
       font-weight: 400;
       font-size: 24px;
+
+      @include forMobile {
+        font-size: 20px;
+      }
     }
   }
 }

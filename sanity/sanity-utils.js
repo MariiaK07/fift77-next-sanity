@@ -6,6 +6,7 @@ export const getHero = async () => (
     groq`*[_type == 'hero'] {
       title,
       'heroImage': heroImage.asset->url,
+      'heroImageMobile': heroImageMobile.asset->url,
       description,
       address,
       'introImage': introImage.asset->url,

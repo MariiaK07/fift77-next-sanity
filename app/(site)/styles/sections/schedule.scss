@@ -5,13 +5,25 @@
   gap: 24px;
   padding: $whitespace-80 0;
 
-  &__unit:last-child {
-    margin: 0 auto;
+  @include forTablet {
+    gap: 56px;
+  }
+
+  @include forMobile {
+    padding: $whitespace-40 0 $whitespace-60;
   }
 
   &__unit {
     width: 462px;
     min-width: 462px;
+
+    @include forTablet {
+      margin: 0 auto;
+    }
+
+    &:last-child {
+      margin: 0 auto;
+    }
   }
 
   &__unit-title {
@@ -21,7 +33,14 @@
     font-weight: 400;
     text-align: center;
     text-transform: uppercase;
+    letter-spacing: 0.4px;
     font-feature-settings: 'pnum' on, 'lnum' on;
+
+    @include forMobile {
+      margin-bottom: 0;
+      font-size: 20px;
+      text-transform: none;
+    }
   }
 
   &__table {
@@ -45,6 +64,10 @@
       text-align: center;
       font-size: 18px;
       line-height: 1.3;
+
+      @include forMobile {
+        font-size: 14px;
+      }
 
       &:first-child {
         width: 20%;

@@ -55,10 +55,10 @@ async function Schedule() {
                   </div>
                 </div>
 
-                {days.classes.map((classItem, index) => (
+                {days.classes.map(classItem => (
                   <div
                     className="schedule__table-row"
-                    key={index}
+                    key={classItem.key}
                   >
                     <div className="schedule__table-cell">
                       {classItem.time}

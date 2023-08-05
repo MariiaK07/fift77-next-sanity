@@ -3,6 +3,10 @@
     padding: $whitespace-80 0;
     position: relative;
 
+    @include forMobile {
+      padding: calc($whitespace-40 + 15px) 0;
+    }
+
     &:before {
       content: '';
       z-index: 1;
@@ -14,8 +18,13 @@
       height: 60px;
       background-color: #fff;
       border-radius: 100%;
+
+      @include forMobile {
+        top: calc($whitespace-40 + 60px);
+        height: 30px;
+      }
     }
-  
+
     &:after {
       content: '';
       z-index: 1;
@@ -27,6 +36,11 @@
       height: 60px;
       background-color: #fff;
       border-radius: 100%;
+
+      @include forMobile {
+        bottom: calc($whitespace-40);
+        height: 30px;
+      }
     }
   }
 
