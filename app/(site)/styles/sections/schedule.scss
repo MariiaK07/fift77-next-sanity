@@ -2,7 +2,7 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
-  gap: 24px;
+  gap: 32px;
   padding: $whitespace-80 0;
 
   @include forTablet {
@@ -21,6 +21,10 @@
       margin: 0 auto;
     }
 
+    @include forMobile {
+      width: 100%;
+    }
+
     &:last-child {
       margin: 0 auto;
     }
@@ -37,7 +41,6 @@
     font-feature-settings: 'pnum' on, 'lnum' on;
 
     @include forMobile {
-      margin-bottom: 0;
       font-size: 20px;
       text-transform: none;
     }
@@ -48,7 +51,6 @@
     flex-direction: column;
     gap: 16px;
     position: relative;
-    padding: 24px 32px;
 
     &-row {
       display: flex;

@@ -35,6 +35,7 @@ async function Price() {
               alt="Засновниця"
               width={496}
               height={460}
+              className="price__image"
             />
           </div>
           <div className="price__button">

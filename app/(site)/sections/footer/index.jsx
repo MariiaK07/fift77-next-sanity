@@ -7,14 +7,13 @@ function Footer() {
     <footer id="footer">
       <div className="container">
         <div className="footer">
-          <Link href="/">
+          <Link href="#hero" className="footer__logo">
             <Image
               src="/logo-transparent.svg"
               alt="Fit77"
               priority
               width={223}
               height={98}
-              className="footer__logo"
             />
           </Link>
 
