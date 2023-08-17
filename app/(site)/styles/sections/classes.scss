@@ -8,14 +8,8 @@
   user-select: none;
 
   @include forMobile {
-    height: 800px;
-    overflow-y: scroll;
     padding: $whitespace-40 0 $whitespace-60;
     row-gap: 32px;
-
-    &::-webkit-scrollbar {
-      display: none;
-    }
   }
 
   &__item {

@@ -16,6 +16,9 @@
 @import 'components/marquee';
 @import 'components/menu';
 
+body {
+  min-width: 340px;
+}
 
 .container {
   margin: 0 auto;

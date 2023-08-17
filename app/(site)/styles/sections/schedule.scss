@@ -23,6 +23,7 @@
 
     @include forMobile {
       width: 100%;
+      min-width: auto;
     }
 
     &:last-child {

@@ -8,14 +8,8 @@
   user-select: none;
 
   @include forMobile {
-    height: 837px;
     padding: $whitespace-40 0 $whitespace-60;
     row-gap: 32px;
-    overflow-y: scroll;
-
-    &::-webkit-scrollbar {
-      display: none;
-    }
   }
 
   &__trainer {
