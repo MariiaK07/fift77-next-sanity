@@ -187,6 +187,7 @@
       width: 100%;
       height: 100%;
       min-height: 530px;
+      border-radius: 210px 210px 0px 0px;
 
       @include forTablet {
         display: flex;
@@ -194,6 +195,7 @@
       }
 
       @include forMobile {
+        border-radius: 100px 100px 0px 0px;
         min-height: 434px;
       }
     }
@@ -207,9 +209,10 @@
       object-position: center;
 
       @include forMobile {
-        min-height: 434px;
+        height: 434px;
+        min-height: unset;
         border-radius: 100px 100px 0px 0px;
-        object-position: top;
+        object-position: center 18%;
       }
     }
   }
@@ -235,17 +238,6 @@
       max-height: 540px;
     }
 
-    &-image-mobile-container {
-      display: none;
-      max-height: 300px;
-      margin-bottom: 16px;
-
-      @include forTablet {
-        display: flex;
-        justify-content: center;
-      }
-    }
-
     &-image {
       max-width: 100%;
       max-height: 100%;
@@ -257,6 +249,24 @@
       @include forTablet {
         max-height: 300px;
         min-height: fit-content;
+      }
+
+      @include forMobile {
+        border-radius: 100px 100px 0px 0px;
+      }
+    }
+
+    &-image-mobile-container {
+      display: none;
+      width: 100%;
+      max-height: 300px;
+      min-height: unset;
+      margin-bottom: 16px;
+      overflow: hidden;
+
+      @include forTablet {
+        display: flex;
+        justify-content: center;
       }
     }
 
@@ -280,10 +290,6 @@
 
       @include forTablet {
         max-width: 100%;
-      }
-
-      @include forMobile {
-        font-size: 14px;
       }
     }
 
