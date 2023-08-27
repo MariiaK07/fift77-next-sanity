@@ -236,20 +236,20 @@
     &-image-container {
       max-width: 400px;
       max-height: 540px;
+      min-height: 540px;
+
+      @include forTablet {
+        min-height: unset;
+        height: 300px;
+      }
     }
 
     &-image {
       max-width: 100%;
       max-height: 100%;
-      min-height: 540px;
       border-radius: 124px 124px 0px 0px;
       object-fit: cover;
       object-position: center;
-
-      @include forTablet {
-        max-height: 300px;
-        min-height: fit-content;
-      }
 
       @include forMobile {
         border-radius: 100px 100px 0px 0px;
@@ -259,8 +259,7 @@
     &-image-mobile-container {
       display: none;
       width: 100%;
-      max-height: 300px;
-      min-height: unset;
+      height: 300px;
       margin-bottom: 16px;
       overflow: hidden;
 
