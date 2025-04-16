@@ -4,7 +4,7 @@ import classNames from 'classnames';
 function Button({ type }) {
   return (
     <Link
-      href="https://www.instagram.com/fit77_fitness_studio/"
+      href="https://www.instagram.com/fit77_studio/"
       target="_blank"
       className={classNames('button', {
         'button--color': type === 'color',
