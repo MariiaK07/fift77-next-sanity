@@ -40,7 +40,7 @@ function DesktopMenu() {
         Контакти
       </Link>
       <Link
-        href="https://www.instagram.com/fit77_fitness_studio/"
+        href="https://www.instagram.com/fit77_studio/"
         target="_blank"
         className="menu__item"
       >
